@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Tiantai Zhang"
   pronouns         : # example: "she/her"
-  bio              : "PhD Student in CS at Nanjing University. Visiting Scholar at Purdue University. Research on binary analysis and security."
-  location         : "West Lafayette, IN"
-  employer         : "Purdue University / Nanjing University"
+  bio              : "PhD Student in CS at Nanjing University. Research on binary analysis and security."
+  location         : "Nanjing, China"
+  employer         : "Nanjing University"
   uri              : # URL
   email            : "z472421519@gmail.com"
 
