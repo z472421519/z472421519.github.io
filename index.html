@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Academicons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<title>Tiantai Zhang's Homepage</title>
+
+<style type="text/css">
+  /* ── Humanist overrides ── */
+  body {
+    background-color: #ffffff;
+    font-family: 'Lora', Georgia, serif;
+    color: #1c1814;
+    line-height: 1.75;
+  }
+
+  h1, h2, h3 {
+    font-family: 'EB Garamond', Georgia, serif;
+    color: #3b2a1a;
+    border-bottom-color: #d4c4b0;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.3em; color: #5a3e28; }
+
+  a, a > tt {
+    color: #7a4520;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  a:hover {
+    border-bottom: 1px solid #a0622a;
+  }
+
+  p { line-height: 1.8; margin-bottom: 0.9em; }
+
+  table#tlayout { background: #ffffff; }
+  #layout-content { background: #ffffff; padding: 0 1.4em; }
+
+  ul { list-style-type: disc; }
+  ul li { margin-bottom: 0.3em; }
+
+  /* publication & awards list — no bullet, left border */
+  #publication + ul,
+  #publication ~ ul,
+  .awards-block ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  #publication + ul li,
+  #publication ~ ul li,
+  .awards-block ul li {
+    padding-left: 1em;
+    border-left: 2px solid #d4c4b0;
+    margin-bottom: 1.1em;
+  }
+
+  .content-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    color: #9e8e7e;
+    font-size: 0.85em;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .avatar-container {
+    width: 160px;
+    height: 175px;
+    background-image: url('figs/profile.png');
+    background-size: cover;
+    background-position: center top;
+    border-radius: 3px;
+    box-shadow: 3px 4px 14px rgba(60,30,10,0.13);
+  }
+
+  .contact-links a {
+    border-bottom: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.05em;
+    letter-spacing: 0.02em;
+  }
+  .contact-links a:hover { border-bottom: 1px solid #a0622a; }
+
+  @media only screen and (max-width: 600px) {
+    body { max-width: 100%; margin: auto; }
+  }
+  @media only screen and (min-width: 600px) {
+    body { max-width: 62%; margin: auto; }
+  }
+</style>
+
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+
+<td id="layout-content">
+<p></p>
+<!-- <h1><a name="name">Tiantai Zhang (z472421519, tai)</a></h1> -->
+<h1><a name="name">Tiantai Zhang</a></h1>
+<table class="imgtable"><tr><td>
+<div class="avatar-container"></div>&nbsp;
+</td>
+<td align="left">
+<p>Ph.D. Student, <a href="https://cs.nju.edu.cn/">Nanjing University</a><br />
+Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Jun 2025 – Jul 2026)</p>
+<p>Email: <a href="mailto:z472421519@gmail.com">z472421519@gmail.com</a></p>
+<p>
+  <a href="https://scholar.google.com/citations?user=5VI9GAIAAAAJ" target="_blank">
+    <i class="fas fa-graduation-cap"></i> Google Scholar
+  </a>
+  &nbsp;/&nbsp;
+  <a href="https://github.com/z472421519" target="_blank">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</p>
+<p>
+[<a href="#publication"><b>Publications</b></a>]
+[<a href="#awards"><b>Awards</b></a>]
+</p>
+</td></tr></table>
+
+<h2><a name="bio">Bio</a></h2>
+<p>Tiantai Zhang is a Ph.D. student in the <a href="https://cs.nju.edu.cn/">Department of Computer Science</a> at <a href="https://www.nju.edu.cn/">Nanjing University</a>, advised by Prof. <a href="https://cs.nju.edu.cn/maob/">Bing Mao</a> (since September 2021). He is currently a Visiting Scholar at <a href="https://www.cs.purdue.edu/">Purdue University</a>, working with Prof. <a href="https://www.cs.purdue.edu/homes/xyzhang/">Xiangyu Zhang</a>.</p>
+
+<p>His work spans reverse engineering, binary defense, and the application of large language models to binary security analysis. He has published at top venues including USENIX Security, ISSTA, and TOSEM. Before his Ph.D., he received his B.E. in Communication Engineering from <a href="https://www.xupt.edu.cn/">Xi'an University of Posts and Telecommunications</a> (2017–2021).</p>
+
+
+<h2><a name="direction">Research Directions</a></h2>
+
+<div class="research-grid">
+  <div class="research-card">
+    <div class="research-title">Binary Analysis &amp; Reverse Engineering</div>
+    <div class="card-note">guided by Dr. Chengbin Pang · the first step of my research</div>
+    <ul>
+      <li>Binary disassembly ground truth and evaluation <span class="paper-tag">USENIX Security'22</span></li>
+      <li>Function entry identification and obfuscation <span class="paper-tag">ISSTA'23</span> <span class="paper-tag">TOSEM'25</span></li>
+    </ul>
+  </div>
+  <div class="research-card">
+    <div class="research-title">Binary Defense</div>
+    <ul>
+      <li>Structure layout randomization</li>
+    </ul>
+  </div>
+  <div class="research-card">
+    <div class="research-title">LLM-Based Binary Security</div>
+    <ul>
+      <li>Neural-symbolic vulnerability auditing for firmware binaries</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    margin: 1em 0 1.5em 0;
+  }
+  .research-card:first-child {
+    grid-row: 1 / 3;
+  }
+  .research-card {
+    background: #f2ede5;
+    border-left: 3px solid #b07040;
+    border-radius: 2px;
+    padding: 0.9em 1.1em 0.6em 1.1em;
+  }
+  .card-note {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 0.82em;
+    color: #9e8060;
+    margin-bottom: 0.5em;
+    opacity: 0.85;
+  }
+  .research-title {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #3b2a1a;
+    margin-bottom: 0.5em;
+  }
+  .research-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .research-card ul li {
+    font-size: 0.93em;
+    color: #4a3828;
+    margin-bottom: 0.3em;
+    padding-left: 0.8em;
+    position: relative;
+  }
+  .research-card ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: #b07040;
+  }
+  .paper-tag {
+    display: inline-block;
+    font-size: 0.78em;
+    font-family: 'EB Garamond', serif;
+    background: #e8dfd0;
+    color: #7a4520;
+    border-radius: 2px;
+    padding: 0 0.35em;
+    margin-left: 0.2em;
+    letter-spacing: 0.02em;
+  }
+  .paper-tag.submitted {
+    background: #f0e8d8;
+    color: #9e7040;
+    font-style: italic;
+  }
+</style>
+
+<h2><a name="publication">Publications</a></h2>
+
+<ul>
+  <li>
+    <p>Posing New Challenges to Function Entry Identification Through Fine-Grained CFI Obfuscation<br />
+    <b>Tiantai Zhang</b>*, Chengbin Pang*, Fei Peng, Linzhang Wang, Bing Mao &nbsp;(*: Equal Contribution)<br />
+    ACM Transactions on Software Engineering and Methodology (<b>TOSEM</b>), 2025.</p>
+  </li>
+
+  <li>
+    <p>OCFI: Make Function Entry Identification Hard Again<br />
+    Chengbin Pang*, <b>Tiantai Zhang</b>*, Xuelan Xu, Linzhang Wang, Bing Mao &nbsp;(*: Equal Contribution)<br />
+    ACM SIGSOFT International Symposium on Software Testing and Analysis (<b>ISSTA</b>), 2023.</p>
+  </li>
+
+  <li>
+    <p>Ground Truth for Binary Disassembly is Not Easy<br />
+    Chengbin Pang, <b>Tiantai Zhang</b>, Ruotong Yu, Bing Mao, Jun Xu<br />
+    USENIX Security Symposium (<b>USENIX Security</b>), 2022.</p>
+  </li>
+
+  <li>
+    <p>Research on Indirect Jump Table Solving Algorithm in Disassembly Tools<br />
+    Chengbin Pang, Xuelan Xu, <b>Tiantai Zhang</b>, Bing Mao<br />
+    Journal of Software (软件学报).</p>
+  </li>
+</ul>
+
+<h2><a name="awards">Awards <span class="awards-epigraph">— things that happened, things that mattered.</span></a></h2>
+<ul>
+  <li><p>Nanjing University Graduate First-Class Academic Scholarship, 2022 &amp; 2023</p></li>
+  <li><p>Nanjing University Ru Li Scholarship, 2022</p></li>
+  <li><p>ICPC Asia-East Continent Final, Bronze Medal, 2019</p></li>
+  <li><p>ICPC Asia Regional Contest, Nanjing Site, Bronze Medal, 2019</p></li>
+  <li><p>China Collegiate Programming Contest (CCPC), Jilin Site, Bronze Medal, 2018</p></li>
+  <li><p>ICPC Asia Regional Contest, Xuzhou Site, Silver Medal, 2018</p></li>
+</ul>
+
+<style>
+  .awards-block {
+    margin: 0.8em 0 1.5em 0;
+    opacity: 0.72;
+  }
+  .awards-epigraph {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 0.75em;
+    color: #9e8e7e;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+</style>
+
+<h2><a name="cp"></a>Algorithm &amp; Competitive Programming <span class="cp-team">· team <span class="cp-team-name">🍬 I Love Candy</span> <span class="cp-thanks">w/ <span style="text-decoration: underline;">Weifeng Huang</span> &amp; <span style="text-decoration: underline;">Chenlei Yang</span></span></span></h2>
+<div class="cp-block">
+  <div class="cp-header">
+    <span class="cp-cf">
+      <a href="https://codeforces.com" target="_blank" class="cf-logo-link">
+        <img src="codeforces.webp" alt="Codeforces" style="height: 18px; vertical-align: middle; image-rendering: auto;" />
+      </a>
+      <a href="https://codeforces.com/profile/z472421519" target="_blank" class="cf-handle">z472421519</a>
+      <span class="cf-rating">1960</span>
+      <span class="cf-rating">Candidate Master</span>
+    </span>
+    <span class="cp-record">1🥈&nbsp;6🥉&nbsp;4🏳️</span>
+  </div>
+  
+  <svg class="cp-chart" viewBox="-30 0 960 165" xmlns="http://www.w3.org/2000/svg">
+    <rect x="-30" y="0" width="960" height="165" fill="#000000" rx="3"/>
+    <!-- axes -->
+    <line x1="42" y1="8"   x2="42"  y2="108" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="42" y1="108" x2="900" y2="108" stroke="#4a3c28" stroke-width="1"/>
+
+    <!-- y-axis: 0–7 -->
+    <line x1="38" y1="108" x2="42" y2="108" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="94"  x2="42" y2="94"  stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="80"  x2="42" y2="80"  stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="66"  x2="42" y2="66"  stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="52"  x2="42" y2="52"  stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="38"  x2="42" y2="38"  stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="24"  x2="42" y2="24"  stroke="#4a3c28" stroke-width="1"/>
+    <line x1="38" y1="10"  x2="42" y2="10"  stroke="#4a3c28" stroke-width="1"/>
+    <text x="36" y="111" text-anchor="end" class="cp-axis">🈚️</text>
+    <text x="36" y="97"  text-anchor="end" class="cp-axis">🥉</text>
+    <text x="36" y="83"  text-anchor="end" class="cp-axis">🥉🥉</text>
+    <text x="36" y="69"  text-anchor="end" class="cp-axis">🥉🥉🥈</text>
+    <text x="36" y="55"  text-anchor="end" class="cp-axis">🥉🥉🥈🥉</text>
+    <text x="36" y="41"  text-anchor="end" class="cp-axis">🥉🥉🥈🥉🥉</text>
+    <text x="36" y="27"  text-anchor="end" class="cp-axis">🥉🥉🥈🥉🥉🥉</text>
+    <text x="36" y="13"  text-anchor="end" class="cp-axis">🥉🥉🥈🥉🥉🥉🥉</text>
+
+    <!-- guide dashes -->
+    <line x1="42" y1="94" x2="900" y2="94" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+    <line x1="42" y1="80" x2="900" y2="80" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+    <line x1="42" y1="66" x2="900" y2="66" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+    <line x1="42" y1="52" x2="900" y2="52" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+    <line x1="42" y1="38" x2="900" y2="38" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+    <line x1="42" y1="24" x2="900" y2="24" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+    <line x1="42" y1="10" x2="900" y2="10" stroke="#3a3020" stroke-dasharray="3,6" stroke-width="0.5"/>
+
+    <!-- step line: 0→0→1→2→3→4→4→4→5→6→6→7 -->
+    <!-- x: 80,160,240,320,400,480,560,640,720,800,880 -->
+    <polyline
+      points="42,108 80,108 160,108 160,94 240,94 240,80 320,80 320,66 400,66 400,52 480,52 560,52 640,52 640,38 720,38 720,24 800,24 880,24 880,10"
+      fill="none" stroke="#c8904a" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- x-axis ticks -->
+    <line x1="80"  y1="108" x2="80"  y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="160" y1="108" x2="160" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="240" y1="108" x2="240" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="320" y1="108" x2="320" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="400" y1="108" x2="400" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="480" y1="108" x2="480" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="560" y1="108" x2="560" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="640" y1="108" x2="640" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="720" y1="108" x2="720" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="800" y1="108" x2="800" y2="112" stroke="#4a3c28" stroke-width="1"/>
+    <line x1="880" y1="108" x2="880" y2="112" stroke="#4a3c28" stroke-width="1"/>
+
+    <!-- 1. EC-Final Shanghai 2017: no medal, y=108 -->
+    <circle cx="80"  cy="108" r="4" fill="#2e2418" stroke="#7a3030" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="80"  y="121" text-anchor="middle" class="cp-node-label">ICPC EC-Final</text>
+    <text x="80"  y="130" text-anchor="middle" class="cp-node-year">Shanghai '17</text>
+
+    <!-- 2. ICPC Invite Xi'an 2018: bronze +1, y=94 -->
+    <circle cx="160" cy="94"  r="5" fill="#c8904a" stroke="#e0a860" stroke-width="1.5"/>
+    <text x="160" y="121" text-anchor="middle" class="cp-node-label">ICPC Invite🍬</text>
+    <text x="160" y="130" text-anchor="middle" class="cp-node-year">Xi'an '18</text>
+
+    <!-- 3. CCPC Jilin 2018: bronze +1, y=80 -->
+    <circle cx="240" cy="80"  r="5" fill="#c8904a" stroke="#e0a860" stroke-width="1.5"/>
+    <text x="240" y="121" text-anchor="middle" class="cp-node-label">CCPC🍬</text>
+    <text x="240" y="130" text-anchor="middle" class="cp-node-year">Jilin '18</text>
+
+    <!-- 4. ICPC Xuzhou 2018: silver +1, y=66 -->
+    <circle cx="320" cy="66"  r="5" fill="#b8c4cc" stroke="#d8e4ec" stroke-width="1.5"/>
+    <text x="320" y="121" text-anchor="middle" class="cp-node-label">ICPC🍬</text>
+    <text x="320" y="130" text-anchor="middle" class="cp-node-year">Xuzhou '18</text>
+
+    <!-- 5. ICPC Beijing 2018: bronze +1, y=52 -->
+    <circle cx="400" cy="52"  r="5" fill="#c8904a" stroke="#e0a860" stroke-width="1.5"/>
+    <text x="400" y="121" text-anchor="middle" class="cp-node-label">ICPC🍬</text>
+    <text x="400" y="130" text-anchor="middle" class="cp-node-year">Beijing '18</text>
+
+    <!-- 6. CCPC Final Shenzhen 2018: no medal, y=52 -->
+    <circle cx="480" cy="52"  r="4" fill="#2e2418" stroke="#7a3030" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="480" y="121" text-anchor="middle" class="cp-node-label">CCPC Final🍬</text>
+    <text x="480" y="130" text-anchor="middle" class="cp-node-year">Shenzhen '18</text>
+
+    <!-- 7. EC-Final Xi'an 2018: no medal, y=52 -->
+    <circle cx="560" cy="52"  r="4" fill="#2e2418" stroke="#7a3030" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="560" y="121" text-anchor="middle" class="cp-node-label">ICPC EC-Final🍬</text>
+    <text x="560" y="130" text-anchor="middle" class="cp-node-year">Xi'an '18</text>
+
+    <!-- 8. ICPC Invite Xi'an 2019: bronze +1, y=38 -->
+    <circle cx="640" cy="38"  r="5" fill="#c8904a" stroke="#e0a860" stroke-width="1.5"/>
+    <text x="640" y="121" text-anchor="middle" class="cp-node-label">ICPC Invite🍬</text>
+    <text x="640" y="130" text-anchor="middle" class="cp-node-year">Xi'an '19</text>
+
+    <!-- 9. ICPC Nanjing 2019: bronze +1, y=24 -->
+    <circle cx="720" cy="24"  r="5" fill="#c8904a" stroke="#e0a860" stroke-width="1.5"/>
+    <text x="720" y="121" text-anchor="middle" class="cp-node-label">ICPC🍬</text>
+    <text x="720" y="130" text-anchor="middle" class="cp-node-year">Nanjing '19</text>
+
+    <!-- 10. ICPC Shanghai 2019: no medal, y=24 -->
+    <circle cx="800" cy="24"  r="4" fill="#2e2418" stroke="#7a3030" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="800" y="121" text-anchor="middle" class="cp-node-label">ICPC🍬</text>
+    <text x="800" y="130" text-anchor="middle" class="cp-node-year">Shanghai '19</text>
+
+    <!-- 11. EC-Final 2019: bronze +1, peak, y=10 -->
+    <circle cx="880" cy="10"  r="6" fill="#d4a060" stroke="#e8c080" stroke-width="2"/>
+    <text x="880" y="121" text-anchor="middle" class="cp-node-label">ICPC EC-Final🍬</text>
+    <text x="880" y="130" text-anchor="middle" class="cp-node-year">2019</text>
+  </svg>
+</div>
+
+<style>
+  .cp-block {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 1.2em 1.4em;
+    margin: 0.8em 0 1.5em 0;
+    font-family: 'Courier New', monospace;
+    color: #e8dfc8;
+  }
+  .cp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #4a3c28;
+  }
+  .cp-title {
+    font-size: 0.8em;
+    color: #8a7a60;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .cp-cf {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+  }
+  .cf-label {
+    font-size: 0.75em;
+    color: #5a4a30;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .cf-handle {
+    color: #c8a060 !important;
+    font-size: 0.9em;
+    border-bottom: none !important;
+  }
+  .cf-handle:hover {
+    color: #e8c080 !important;
+    border-bottom: 1px solid #c8a060 !important;
+  }
+  .cf-rating {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #a0a !important;
+    letter-spacing: -0.02em;
+  }
+  .cf-rank {
+    font-size: 0.75em;
+    color: #d4803a;
+    opacity: 0.8;
+  }
+  .cp-record {
+    font-size: 0.85em;
+    color: #8a7a60;
+    letter-spacing: 0.05em;
+  }
+  .cp-thanks {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #9e8e7e;
+    font-weight: 400;
+  }
+  .cp-team {
+    font-size: 0.72em;
+    color: #8a7a60;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+  .cp-team-name {
+    color: #d4a060;
+    font-style: italic;
+  }
+  .cp-medals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em 1.5em;
+  }
+  .cp-medal-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8em;
+    font-size: 0.85em;
+  }
+  .cp-contest {
+    color: #d4c8a8;
+    flex: 1;
+  }
+  .cp-year {
+    color: #5a4a30;
+    font-size: 0.82em;
+    white-space: nowrap;
+  }
+  .cp-chart {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+  .cp-axis {
+    font-family: 'Courier New', monospace;
+    font-size: 8px;
+    fill: #5a4a30;
+  }
+  .cp-node-label {
+    font-family: 'Courier New', monospace;
+    font-size: 7.5px;
+    fill: #d4c8a8;
+  }
+  .cp-node-year {
+    font-family: 'Courier New', monospace;
+    font-size: 7px;
+    fill: #d4c8a8;
+  }
+</style>
+
+<h2></h2>
+</td>
+</tr>
+</table>
+
+<div class="content-center">
+  <font color="black" size="3.5pt">Last modified: 2026.04</font>
+</div>
+</body>
+</html>
