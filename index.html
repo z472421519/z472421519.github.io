@@ -104,6 +104,8 @@
 
   @media only screen and (max-width: 600px) {
     body { max-width: 100%; margin: auto; }
+    table#tlayout { width: 100%; table-layout: fixed; }
+    #layout-content { padding-left: 0.75em; padding-right: 0.75em; }
   }
   @media only screen and (min-width: 600px) {
     body { max-width: 62%; margin: auto; }
@@ -136,6 +138,8 @@ Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Ju
   </a>
 </p>
 <p>
+[<a href="#now"><b>Now</b></a>]
+[<a href="#direction"><b>Research</b></a>]
 [<a href="#publication"><b>Publications</b></a>]
 [<a href="#awards"><b>Awards</b></a>]
 </p>
@@ -146,63 +150,155 @@ Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Ju
 
 <p>His work spans reverse engineering, binary defense, and the application of large language models to binary security analysis. He has published at top venues including USENIX Security, ISSTA, and TOSEM. Before his Ph.D., he received his B.E. in Communication Engineering from <a href="https://www.xupt.edu.cn/">Xi'an University of Posts and Telecommunications</a> (2017–2021).</p>
 
+<h2><a name="now">What I'm Working On</a></h2>
+
+<p class="now-intro">My current work asks how we can reason reliably about imperfect binaries and build practical protections whose security guarantees survive real-world compilation.</p>
+
+<div class="now-list">
+  <div class="now-item">
+    <div class="now-label"><span class="now-icon" aria-hidden="true"><i class="fas fa-magnifying-glass"></i></span><span>Audit &amp; Validation</span></div>
+    <div class="now-title">How can AI-assisted binary auditing move from plausible findings to verifiable security evidence?</div>
+    <div class="now-copy">Exploring how to move from plausible vulnerability findings to conclusions that can be checked against real program behavior.</div>
+  </div>
+  <div class="now-item">
+    <div class="now-label"><span class="now-icon" aria-hidden="true"><i class="fas fa-code"></i></span><span>Decompilation &amp; AI</span></div>
+    <div class="now-title">How do decompilation challenges affect model-based binary bug detection?</div>
+    <div class="now-copy">Using decompilation results to study which lost, distorted, or recovered program properties matter when models search binaries for bugs.</div>
+  </div>
+  <div class="now-item">
+    <div class="now-label"><span class="now-icon" aria-hidden="true"><i class="fas fa-gears"></i></span><span>Defense &amp; Optimization</span></div>
+    <div class="now-title">Can compiler and runtime defenses remain secure and practical under optimization?</div>
+    <div class="now-copy">Investigating protections for security-sensitive program data while studying how compiler transformations affect their effectiveness, guarantees, and cost.</div>
+  </div>
+</div>
+<p class="now-updated">Updated July 2026</p>
+
+<figure class="research-vision">
+  <a href="background.png" target="_blank" rel="noopener" title="Open the full-resolution research illustration">
+    <img src="background.png" width="1774" height="887" decoding="async" alt="A white-hat researcher leads Claude, GPT, Kimi, DeepSeek, and GLM agents from source-code analysis across a semantic wall toward the binary-security frontier while defending against adversarial agents." />
+  </a>
+  <figcaption>From source-code intelligence to the binary-security frontier.</figcaption>
+</figure>
+
 
 <h2><a name="direction">Research Directions</a></h2>
 
 <div class="research-grid">
   <div class="research-card">
-    <div class="research-title">Binary Analysis &amp; Reverse Engineering</div>
-    <div class="card-note">guided by Dr. Chengbin Pang · the first step of my research</div>
+    <div class="research-heading">
+      <div class="research-icon" aria-hidden="true"><i class="fas fa-code-branch"></i></div>
+      <div class="research-title">Binary Analysis &amp; Reverse Engineering</div>
+    </div>
     <ul>
       <li>Binary disassembly ground truth and evaluation <span class="paper-tag">USENIX Security'22</span></li>
       <li>Function entry identification and obfuscation <span class="paper-tag">ISSTA'23</span> <span class="paper-tag">TOSEM'25</span></li>
+      <li>Model-based binary bug detection under decompilation challenges <span class="paper-tag current-tag">Current</span></li>
     </ul>
+    <div class="card-note">
+      <span class="card-credit">guided by Dr. Chengbin Pang</span>
+      <span class="card-step">where my research journey began</span>
+    </div>
   </div>
   <div class="research-card">
-    <div class="research-title">Binary Defense</div>
+    <div class="research-heading">
+      <div class="research-icon" aria-hidden="true"><i class="fas fa-shield-halved"></i></div>
+      <div class="research-title">Binary Defense</div>
+    </div>
     <ul>
-      <li>Structure layout randomization</li>
+      <li>Structure layout randomization <span class="paper-tag current-tag">Current</span></li>
+      <li>Compiler and runtime data protection under real-world optimization <span class="paper-tag current-tag">Current</span></li>
     </ul>
+    <div class="card-note">
+      <span class="card-credit">introduced to this direction by Dr. Chengbin Pang</span>
+      <span class="card-step">my first step in broadening my research</span>
+    </div>
   </div>
   <div class="research-card">
-    <div class="research-title">LLM-Based Binary Security</div>
+    <div class="research-heading">
+      <div class="research-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+      <div class="research-title">LLM-Based Binary Security</div>
+    </div>
     <ul>
-      <li>Neural-symbolic vulnerability auditing for firmware binaries</li>
+      <li>Neural-symbolic vulnerability auditing for firmware binaries <span class="paper-tag current-tag">Current</span></li>
+      <li>Feedback-guided validation of binary vulnerability findings <span class="paper-tag current-tag">Current</span></li>
     </ul>
+    <div class="card-note">
+      <span class="card-credit">introduced to this direction by Prof. Xiangyu Zhang and Chengpeng Wang</span>
+      <span class="card-step">my second step in that exploration</span>
+    </div>
   </div>
 </div>
 
 <style>
   .research-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 1em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85em;
     margin: 1em 0 1.5em 0;
   }
-  .research-card:first-child {
-    grid-row: 1 / 3;
-  }
   .research-card {
-    background: #f2ede5;
-    border-left: 3px solid #b07040;
-    border-radius: 2px;
-    padding: 0.9em 1.1em 0.6em 1.1em;
+    --research-accent: #9a5b32;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #f8f6f2;
+    border: 1px solid #e1d9ce;
+    border-top: 3px solid var(--research-accent);
+    border-radius: 3px;
+    padding: 1em 1.05em 0.85em;
+  }
+  .research-card:nth-child(2) {
+    --research-accent: #315b57;
+  }
+  .research-card:nth-child(3) {
+    --research-accent: #4f5f78;
+  }
+  .research-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65em;
+    min-height: 2.85em;
+    margin-bottom: 0.55em;
+  }
+  .research-icon {
+    display: grid;
+    flex: 0 0 1.9em;
+    width: 1.9em;
+    height: 1.9em;
+    place-items: center;
+    background: #ffffff;
+    border: 1px solid var(--research-accent);
+    border-radius: 50%;
+    color: var(--research-accent);
+    font-size: 0.85em;
   }
   .card-note {
     font-family: 'EB Garamond', Georgia, serif;
     font-style: italic;
-    font-size: 0.82em;
-    color: #9e8060;
-    margin-bottom: 0.5em;
-    opacity: 0.85;
+    font-size: 0.84em;
+    line-height: 1.45;
+    color: #826b57;
+    margin: auto 0 0;
+    padding-top: 0.65em;
+    border-top: 1px solid #ded7cf;
+    opacity: 0.9;
+  }
+  .card-credit,
+  .card-step {
+    display: block;
+  }
+  .card-step {
+    margin-top: 0.08em;
+    color: var(--research-accent);
   }
   .research-title {
+    flex: 1;
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 1.05em;
     font-weight: 600;
+    line-height: 1.3;
     color: #3b2a1a;
-    margin-bottom: 0.5em;
+    padding-top: 0.1em;
   }
   .research-card ul {
     list-style: none;
@@ -212,7 +308,8 @@ Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Ju
   .research-card ul li {
     font-size: 0.93em;
     color: #4a3828;
-    margin-bottom: 0.3em;
+    line-height: 1.55;
+    margin-bottom: 0.4em;
     padding-left: 0.8em;
     position: relative;
   }
@@ -220,7 +317,7 @@ Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Ju
     content: '–';
     position: absolute;
     left: 0;
-    color: #b07040;
+    color: var(--research-accent);
   }
   .paper-tag {
     display: inline-block;
@@ -231,12 +328,140 @@ Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Ju
     border-radius: 2px;
     padding: 0 0.35em;
     margin-left: 0.2em;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
+  }
+  .paper-tag.current-tag {
+    background: transparent;
+    border: 1px solid var(--research-accent);
+    color: var(--research-accent);
+    font-style: normal;
+    white-space: nowrap;
   }
   .paper-tag.submitted {
     background: #f0e8d8;
     color: #9e7040;
     font-style: italic;
+  }
+  @media only screen and (max-width: 1100px) {
+    .research-grid {
+      grid-template-columns: 1fr;
+    }
+    .research-heading {
+      min-height: 0;
+    }
+  }
+</style>
+
+<style>
+  .now-intro {
+    margin: 0.55em 0 0.9em;
+    color: #6f5239;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05em;
+  }
+  .now-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0;
+    border-top: 2px solid #557b74;
+    border-bottom: 1px solid #d4c4b0;
+  }
+  .now-item {
+    min-width: 0;
+    padding: 1em 1.1em 1.1em;
+  }
+  .now-item:first-child {
+    padding-left: 0;
+  }
+  .now-item:last-child {
+    padding-right: 0;
+  }
+  .now-item + .now-item {
+    border-left: 1px solid #d9e2df;
+  }
+  .now-label {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+    color: #315b57;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+  .now-icon {
+    display: inline-grid;
+    flex: 0 0 1.55em;
+    width: 1.55em;
+    height: 1.55em;
+    place-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    font-size: 0.82em;
+  }
+  .now-title {
+    min-height: 5.25em;
+    margin: 0.4em 0 0.7em;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05em;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #3b2a1a;
+  }
+  .now-copy {
+    color: #4a3828;
+    font-size: 0.9em;
+    line-height: 1.65;
+  }
+  .now-updated {
+    margin-top: 0.25em;
+    text-align: right;
+    color: #9e8060;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.82em;
+    font-style: italic;
+  }
+  .research-vision {
+    margin: 1.25em 0 1.8em;
+  }
+  .research-vision a,
+  .research-vision a:hover {
+    display: block;
+    border-bottom: none;
+  }
+  .research-vision img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background: #f8f6f2;
+    border: 1px solid #d4c4b0;
+    border-radius: 2px;
+  }
+  .research-vision figcaption {
+    margin-top: 0.35em;
+    color: #826b57;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.82em;
+    font-style: italic;
+    text-align: right;
+  }
+  @media only screen and (max-width: 1100px) {
+    .now-list {
+      grid-template-columns: 1fr;
+    }
+    .now-item {
+      padding: 0.85em 0;
+    }
+    .now-item + .now-item {
+      border-top: 1px solid #d9e2df;
+      border-left: none;
+    }
+    .now-title {
+      min-height: 0;
+      margin-bottom: 0.45em;
+    }
   }
 </style>
 
@@ -244,28 +469,35 @@ Visiting Scholar, <a href="https://www.cs.purdue.edu/">Purdue University</a> (Ju
 
 <ul>
   <li>
-    <p>Posing New Challenges to Function Entry Identification Through Fine-Grained CFI Obfuscation<br />
+    <p><a href="https://arxiv.org/abs/2601.12360" target="_blank">Discovering 100+ Compiler Defects in 72 Hours via LLM-Driven Semantic Logic Recomposition</a><br />
+    Xingbang He, Yuanwei Chen, Hao Wu, Jikang Zhang, Zicheng Wang, Ligeng Chen, Junjie Peng, Haiyang Wei, Yi Qian, <b>Tiantai Zhang</b>, Linzhang Wang, Bing Mao<br />
+    ACM SIGSAC Conference on Computer and Communications Security (<b>CCS</b>), 2026 (Round 1).</p>
+  </li>
+
+  <li>
+    <p><a href="https://arxiv.org/abs/2601.12349" target="_blank">Mind the Gap: Action Rebinding Attacks against Android GUI Agents</a><br />
+    Yi Qian, Kunwei Qian, Xingbang He, Ligeng Chen, Jikang Zhang, <b>Tiantai Zhang</b>, Haiyang Wei, Linzhang Wang, Hao Wu, Bing Mao<br />
+    ACM SIGSAC Conference on Computer and Communications Security (<b>CCS</b>), 2026 (Round 1).</p>
+  </li>
+
+  <li>
+    <p><a href="https://dl.acm.org/doi/10.1145/3770582" target="_blank">Posing New Challenges to Function Entry Identification Through Fine-Grained CFI Obfuscation</a><br />
     <b>Tiantai Zhang</b>*, Chengbin Pang*, Fei Peng, Linzhang Wang, Bing Mao &nbsp;(*: Equal Contribution)<br />
     ACM Transactions on Software Engineering and Methodology (<b>TOSEM</b>), 2025.</p>
   </li>
 
   <li>
-    <p>OCFI: Make Function Entry Identification Hard Again<br />
+    <p><a href="https://dl.acm.org/doi/abs/10.1145/3597926.3598097" target="_blank">OCFI: Make Function Entry Identification Hard Again</a><br />
     Chengbin Pang*, <b>Tiantai Zhang</b>*, Xuelan Xu, Linzhang Wang, Bing Mao &nbsp;(*: Equal Contribution)<br />
     ACM SIGSOFT International Symposium on Software Testing and Analysis (<b>ISSTA</b>), 2023.</p>
   </li>
 
   <li>
-    <p>Ground Truth for Binary Disassembly is Not Easy<br />
+    <p><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pang-chengbin" target="_blank">Ground Truth for Binary Disassembly is Not Easy</a><br />
     Chengbin Pang, <b>Tiantai Zhang</b>, Ruotong Yu, Bing Mao, Jun Xu<br />
     USENIX Security Symposium (<b>USENIX Security</b>), 2022.</p>
   </li>
 
-  <li>
-    <p>Research on Indirect Jump Table Solving Algorithm in Disassembly Tools<br />
-    Chengbin Pang, Xuelan Xu, <b>Tiantai Zhang</b>, Bing Mao<br />
-    Journal of Software (软件学报).</p>
-  </li>
 </ul>
 
 <h2><a name="awards">Awards <span class="awards-epigraph">— things that happened, things that mattered.</span></a></h2>
